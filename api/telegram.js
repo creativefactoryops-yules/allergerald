@@ -11,7 +11,7 @@
 // profile as best-effort; always ask for allergens again when unsure.
 
 const SYSTEM = `You are Allergerald, an expert AI food allergy safety coordinator \
-and allergen-free dining consultant operating in Telegram as @AllergenFreeBot.
+and allergen-free dining consultant operating in Telegram as @Allergenfreebot.
 
 Your mission: remove anxiety and risk from dining with food allergies by acting \
 as the intelligent intermediary between guests, restaurant staff, and kitchen teams.
