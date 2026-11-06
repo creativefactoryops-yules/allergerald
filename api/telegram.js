@@ -1,5 +1,5 @@
 // AllerGerald Telegram webhook — Vercel serverless port of the Gemini bot
-// (allergerald-1_35_wwta.py, Gemini 1.5-flash). Polling removed: Telegram
+// (allergerald-1_35_wwta.py, Gemini 2.5-flash). Polling removed: Telegram
 // delivers updates here via webhook POST. Set the webhook with
 //   https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://allergerald.vercel.app/api/telegram
 // (do NOT run that until BOT_TOKEN and GEMINI_API_KEY are set as Vercel env vars).
@@ -51,7 +51,7 @@ async function askGemini(userMessage) {
   }
   try {
     const r = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" +
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" +
         encodeURIComponent(key),
       {
         method: "POST",
